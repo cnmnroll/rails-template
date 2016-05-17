@@ -43,7 +43,7 @@ end
 run "rm app/assets/stylesheets/application.css"
 run "rm app/assets/javascripts/application.js"
 
-@repo_url = 'https://github.com/cnmnroll/rails-template.git'
+@repo_url = 'https://raw.githubusercontent.com/cnmnroll/rails-template/master'
 run "wget #{@repo_url}/app/assets/stylesheets/application.scsss -P app/assets/stylesheets/"
 run "wget #{@repo_url}/app/assets/javascripts/application.js -P app/assets/javascripts/"
 
