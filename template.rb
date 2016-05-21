@@ -7,7 +7,8 @@ git commit: %Q{-m 'Initial commit'}
 
 # Bootstrap
 gem 'bootstrap-sass'
-
+gem 'momentjs-rails'
+gem 'bootstrap3-datetimepicker-rails'
 # turbolinks support
 gem 'jquery-turbolinks'
 

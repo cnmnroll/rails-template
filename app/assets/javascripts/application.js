@@ -15,4 +15,25 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require moment
+//= require bootstrap-datetimepicker
 //= require_tree .
+
+$(function (){
+
+	$('.yearepicker').datetimepicker({
+		format: 'YYYY'
+	});
+	$('.datepicker').datetimepicker({
+		format: 'YYYY/MM/DD'
+	});
+	$('.ympicker').datetimepicker({
+		format: 'YYYY/MM/DD'
+	});
+	$('.dattimeepicker').datetimepicker({
+		format: 'YYYY/MM/DD HH:mm'
+	});
+	$('.timepicker').datetimepicker({
+		format: 'HH:mm'
+	});
+});
