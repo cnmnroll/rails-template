@@ -50,3 +50,5 @@ run "wget #{@repo_url}/app/assets/javascripts/application.js -P app/assets/javas
 run "rm db/seeds.rb"
 run "wget -r -l 0 #{@repo_url}/db/seeds -P db/"
 run "wget #{@repo_url}/db/seeds.rb -P db/"
+
+run "wget #{@repo_url}/config/lacales/ja.yml -P app/config/lacales/"
