@@ -24,6 +24,7 @@ gem 'active_decorator'
 gem 'nokogiri'
 
 
+gem "nested_form"
 gem "font-awesome-rails"
 gem 'draper'
 
