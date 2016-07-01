@@ -11,29 +11,39 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery.turbolinks
 //= require jquery_ujs
+//= require jquery.turbolinks
 //= require turbolinks
-//= require bootstrap-sprockets
+//= require bootstrap
 //= require moment
+//= require moment/ja
 //= require bootstrap-datetimepicker
+//= require jquery_nested_form
 //= require_tree .
 
-$(function (){
+$(function($){
+	// datetimepicker フォーマット 時分
+	$('.datetimepicker').datetimepicker({
+		format : "HH:mm"
+	});
 
-	$('.yearepicker').datetimepicker({
-		format: 'YYYY'
+	// datetimepicker フォーマット 年
+	$('.yearpicker').datetimepicker({
+		format : "YYYY"
 	});
+
+	// datetimepicker フォーマット 年月
 	$('.datepicker').datetimepicker({
-		format: 'YYYY/MM/DD'
+		format : "YYYY/MM"
 	});
-	$('.ympicker').datetimepicker({
-		format: 'YYYY/MM/DD'
+
+	// datetimepicker clicke 時 値初期化
+	$('.datetimepicker').on('click', function(){
+		$(this).val('');
 	});
-	$('.dattimeepicker').datetimepicker({
-		format: 'YYYY/MM/DD HH:mm'
-	});
-	$('.timepicker').datetimepicker({
-		format: 'HH:mm'
+
+	// 祝日click時 初期化
+	$('.holiday_text').on('click', function(){
+		$(this).val('');
 	});
 });

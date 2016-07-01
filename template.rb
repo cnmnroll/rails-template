@@ -9,6 +9,8 @@ git commit: %Q{-m 'Initial commit'}
 gem 'bootstrap-sass'
 gem 'momentjs-rails'
 gem 'bootstrap3-datetimepicker-rails'
+gem 'will_paginate-bootstrap'
+
 # turbolinks support
 gem 'jquery-turbolinks'
 
@@ -20,6 +22,10 @@ gem 'slim-rails'
 # Presenter Layer Helper
 gem 'active_decorator'
 gem 'nokogiri'
+
+
+gem "font-awesome-rails"
+gem 'draper'
 
 run_bundle
 # set config/application.rb
